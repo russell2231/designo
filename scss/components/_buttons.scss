@@ -1,0 +1,32 @@
+button {
+	cursor: pointer;
+}
+
+.btn {
+	padding: 1.7rem 2.4rem;
+	font-size: 1.5rem;
+	letter-spacing: 1px;
+	line-height: 1.4;
+	border-radius: 8px;
+	border: none;
+	transition: background 0.3s ease;
+}
+
+.btn--light {
+	color: $secondary-dark-grey;
+	background: $white;
+
+	&:hover {
+		background: $secondary-peach;
+		color: $white;
+	}
+}
+
+.btn--dark {
+	color: $white;
+	background: $primary-peach;
+
+	&:hover {
+		background: $secondary-peach;
+	}
+}
