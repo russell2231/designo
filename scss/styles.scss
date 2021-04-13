@@ -1,6 +1,8 @@
 @import 'abstracts/variables', 'abstracts/functions', 'abstracts/mixins',
 	'abstracts/container';
 
-@import 'base/normalize', 'base/typography', 'base/typography';
+@import 'base/normalize', 'base/typography', 'base/base';
+
+@import 'layout/navigation', 'layout/header';
 
 @import 'components/buttons';

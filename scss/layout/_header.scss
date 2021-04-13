@@ -1,0 +1,8 @@
+.header {
+	padding: 3.4rem 0;
+	background: $white;
+
+	@include respond-to(small) {
+		padding: 6.4rem 0;
+	}
+}

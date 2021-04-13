@@ -1,0 +1,86 @@
+.header {
+	.main-nav {
+		display: flex;
+		justify-content: space-between;
+
+		.logo img {
+			width: 202px;
+		}
+
+		.list {
+			display: none;
+
+			@include respond-to(small) {
+				display: flex;
+				justify-content: space-between;
+				width: 370px;
+
+				.list-item {
+					font-size: 1.4rem;
+					letter-spacing: 2px;
+					text-transform: uppercase;
+
+					a {
+						text-decoration: none;
+						color: $secondary-dark-grey;
+
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+		}
+
+		.nav__toggler {
+			width: 24px;
+			height: 20px;
+			background: url(../../assets/shared/mobile/icon-hamburger.svg) no-repeat
+				center/cover;
+
+			@include respond-to(small) {
+				display: none;
+			}
+		}
+	}
+
+	// Expanded Main Nav Module
+	&.expanded {
+		position: relative;
+		z-index: 2;
+
+		.list {
+			background: $primary-black;
+			display: flex;
+			flex-direction: column;
+			position: absolute;
+			bottom: -225%;
+			left: 0;
+			right: 0;
+			padding: 4.8rem 2.4rem;
+
+			.list-item {
+				font-size: 2.4rem;
+				letter-spacing: 2px;
+				line-height: 1;
+				text-transform: uppercase;
+				margin-bottom: 3.2rem;
+
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+
+				a {
+					color: $white;
+					text-decoration: none;
+				}
+			}
+		}
+
+		.nav__toggler {
+			background: url(../../assets/shared/mobile/icon-close.svg) no-repeat
+				center/cover;
+			width: 20px;
+		}
+	}
+}
