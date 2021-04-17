@@ -9,7 +9,10 @@ button {
 	line-height: 1.4;
 	border-radius: 8px;
 	border: none;
+	text-decoration: none;
 	transition: background 0.3s ease;
+	text-transform: uppercase;
+	text-align: center;
 }
 
 .btn--light {

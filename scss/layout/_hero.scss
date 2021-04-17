@@ -1,0 +1,101 @@
+.hero {
+	background: $primary-peach;
+	padding: 7.8rem 0 0;
+	position: relative;
+	height: 843px;
+	max-width: 1110px;
+	overflow-y: hidden;
+
+	@include respond-to(small) {
+		width: 87.2%;
+		margin: 0 auto;
+		border-radius: 15px;
+		padding: 5.8rem 0 0;
+	}
+	@include respond-to(large) {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 9.5rem;
+		height: 640px;
+	}
+
+	&::after {
+		content: url(../../assets/home/desktop/bg-pattern-hero-home.svg);
+		position: absolute;
+		top: 12%;
+		left: 0;
+		width: 50%;
+		z-index: 0;
+
+		@include respond-to(small) {
+			left: 50%;
+			transform: translate(-50%);
+		}
+		@include respond-to(medium) {
+			transform: unset;
+			left: unset;
+			right: 0;
+		}
+		@include respond-to(large) {
+			left: unset;
+			transform: unset;
+			right: 7%;
+			top: 0;
+		}
+	}
+
+	.hero__content {
+		position: relative;
+		z-index: 2;
+		text-align: center;
+		color: $white;
+		padding: 0 2.4rem;
+
+		@include respond-to(small) {
+			padding: 0 5.8rem;
+		}
+		@include respond-to(large) {
+			padding: 0;
+			width: 540px;
+			text-align: left;
+		}
+
+		.hero__title {
+			color: $white;
+			margin-top: 0;
+			margin-bottom: 2.4rem;
+		}
+
+		.hero__tagline {
+			margin-top: 0;
+			margin-bottom: 2.4rem;
+
+			@include respond-to(small) {
+				padding: 0 6.8rem;
+			}
+			@include respond-to(large) {
+				padding: 0;
+				margin-bottom: 4rem;
+				width: 445px;
+			}
+		}
+
+		.btn {
+			display: inline-block;
+		}
+	}
+
+	.hero__image {
+		padding: 0 4.6rem;
+		display: flex;
+		justify-content: center;
+
+		img {
+			width: 284px;
+			position: relative;
+			top: 8rem;
+			z-index: 1;
+		}
+	}
+}
