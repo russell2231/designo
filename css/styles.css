@@ -360,15 +360,9 @@ html {
 
 body {
   font-family: "Jost", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 1.6;
   color: #333136;
-}
-
-@media screen and (min-width: 768px) {
-  body {
-    font-size: 1.6rem;
-  }
 }
 
 h1,
@@ -715,6 +709,105 @@ h3 {
         grid-row-start: 1;
     grid-row-end: 3;
   }
+}
+
+.features {
+  padding-top: 12rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .features {
+    padding-top: 16rem;
+  }
+}
+
+.features.grid {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  row-gap: 8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .features.grid {
+    row-gap: 3.2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .features.grid {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -webkit-column-gap: 3rem;
+            column-gap: 3rem;
+  }
+}
+
+.features .features__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .features .features__item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .features .features__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.features .features__item .features__icon {
+  background: url(../../assets/shared/desktop/bg-pattern-small-circle.svg) no-repeat;
+}
+
+.features .features__item .features__content {
+  text-align: center;
+  margin-top: 4.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .features .features__item .features__content {
+    width: 63.7%;
+    text-align: left;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .features .features__item .features__content {
+    width: 100%;
+    text-align: center;
+    margin-top: 4.6rem;
+  }
+}
+
+.features .features__item .features__content .features__title {
+  text-transform: uppercase;
+  margin: 0 0 3.4rem;
+}
+
+.features .features__item .features__content .features__tagline {
+  margin: 0;
 }
 
 button {

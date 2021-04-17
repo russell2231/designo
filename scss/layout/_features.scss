@@ -1,0 +1,64 @@
+.features {
+	padding-top: 12rem;
+
+	@include respond-to(large) {
+		padding-top: 16rem;
+	}
+
+	&.grid {
+		grid-template-columns: 1fr;
+		row-gap: 8rem;
+
+		@include respond-to(small) {
+			row-gap: 3.2rem;
+		}
+		@include respond-to(large) {
+			grid-template-columns: repeat(3, 1fr);
+			column-gap: 3rem;
+		}
+	}
+
+	.features__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@include respond-to(small) {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		@include respond-to(large) {
+			flex-direction: column;
+		}
+
+		.features__icon {
+			background: url(../../assets/shared/desktop/bg-pattern-small-circle.svg)
+				no-repeat;
+		}
+
+		.features__content {
+			text-align: center;
+			margin-top: 4.6rem;
+
+			@include respond-to(small) {
+				width: 63.7%;
+				text-align: left;
+				margin-top: 0;
+			}
+			@include respond-to(large) {
+				width: 100%;
+				text-align: center;
+				margin-top: 4.6rem;
+			}
+
+			.features__title {
+				text-transform: uppercase;
+				margin: 0 0 3.4rem;
+			}
+
+			.features__tagline {
+				margin: 0;
+			}
+		}
+	}
+}
