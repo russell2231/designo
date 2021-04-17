@@ -4,7 +4,7 @@
 	position: relative;
 	height: 843px;
 	max-width: 1110px;
-	overflow-y: hidden;
+	overflow: hidden;
 
 	@include respond-to(small) {
 		width: 87.2%;

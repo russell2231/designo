@@ -1,0 +1,23 @@
+.showcase {
+	padding-top: 12rem;
+
+	@include respond-to(large) {
+		padding-top: 16rem;
+	}
+
+	&.grid {
+		grid-template-columns: 1fr;
+		row-gap: 2.4rem;
+
+		@include respond-to(large) {
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr 1fr;
+			column-gap: 3rem;
+
+			.showcase__item:first-of-type {
+				grid-row-start: 1;
+				grid-row-end: 3;
+			}
+		}
+	}
+}

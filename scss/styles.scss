@@ -3,6 +3,7 @@
 
 @import 'base/normalize', 'base/typography', 'base/base';
 
-@import 'layout/navigation', 'layout/header', 'layout/hero';
+@import 'layout/grid', 'layout/navigation', 'layout/header', 'layout/hero',
+	'layout/showcase';
 
-@import 'components/buttons';
+@import 'components/buttons', 'components/showcase-item';

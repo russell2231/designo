@@ -390,9 +390,16 @@ h1 {
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 2.8rem;
+  letter-spacing: 1.4px;
   line-height: 1.2;
-  letter-spacing: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 4rem;
+    letter-spacing: 2px;
+  }
 }
 
 h3 {
@@ -426,6 +433,11 @@ h3 {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
 }
 
 .header .main-nav {
@@ -541,7 +553,7 @@ h3 {
   position: relative;
   height: 843px;
   max-width: 1110px;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
@@ -673,6 +685,38 @@ h3 {
   z-index: 1;
 }
 
+.showcase {
+  padding-top: 12rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .showcase {
+    padding-top: 16rem;
+  }
+}
+
+.showcase.grid {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  row-gap: 2.4rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .showcase.grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -webkit-column-gap: 3rem;
+            column-gap: 3rem;
+  }
+  .showcase.grid .showcase__item:first-of-type {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 3;
+  }
+}
+
 button {
   cursor: pointer;
 }
@@ -708,5 +752,111 @@ button {
 
 .btn--dark:hover {
   background: #ffad98;
+}
+
+.showcase__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8.8rem 0 9rem;
+  text-decoration: none;
+  border-radius: 15px;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .showcase__item {
+    padding: 5rem 0 5.4rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .showcase__item {
+    padding: 10.4rem 0 10.8rem;
+  }
+}
+
+.showcase__item.web-design {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../assets/home/mobile/image-web-design.jpg) no-repeat center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/home/mobile/image-web-design.jpg) no-repeat center/cover;
+}
+
+@media screen and (min-width: 768px) {
+  .showcase__item.web-design {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../assets/home/tablet/image-web-design.jpg) no-repeat center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/home/tablet/image-web-design.jpg) no-repeat center/cover;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .showcase__item.web-design {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../assets/home/desktop/image-web-design-large.jpg) no-repeat center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/home/desktop/image-web-design-large.jpg) no-repeat center/cover;
+  }
+}
+
+.showcase__item.app-design {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../assets/home/mobile/image-app-design.jpg) no-repeat center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/home/mobile/image-app-design.jpg) no-repeat center/cover;
+}
+
+@media screen and (min-width: 768px) {
+  .showcase__item.app-design {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../assets/home/tablet/image-app-design.jpg) no-repeat center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/home/tablet/image-app-design.jpg) no-repeat center/cover;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .showcase__item.app-design {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../assets/home/desktop/image-app-design.jpg) no-repeat center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/home/desktop/image-app-design.jpg) no-repeat center/cover;
+  }
+}
+
+.showcase__item.graphic-design {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../assets/home/mobile/image-graphic-design.jpg) no-repeat center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/home/mobile/image-graphic-design.jpg) no-repeat center/cover;
+}
+
+@media screen and (min-width: 768px) {
+  .showcase__item.graphic-design {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../assets/home/tablet/image-graphic-design.jpg) no-repeat center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/home/tablet/image-graphic-design.jpg) no-repeat center/cover;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .showcase__item.graphic-design {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../assets/home/desktop/image-graphic-design.jpg) no-repeat center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/home/desktop/image-graphic-design.jpg) no-repeat center/cover;
+  }
+}
+
+.showcase__item:hover {
+  background: rgba(231, 129, 104, 0.8);
+}
+
+.showcase__item .showcase__title {
+  color: #fff;
+  margin: 0 0 1.2rem;
+  text-transform: uppercase;
+}
+
+.showcase__item .showcase__tagline {
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 0;
 }
 /*# sourceMappingURL=styles.css.map */
