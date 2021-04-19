@@ -679,6 +679,69 @@ h3 {
   z-index: 1;
 }
 
+.hero.hero--half {
+  height: auto;
+  padding: 10rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .hero.hero--half {
+    padding: 6rem 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero.hero--half {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.hero.hero--half::after {
+  content: url(../../assets/web-design/desktop/bg-pattern-intro-web.svg);
+  top: 0;
+  left: unset;
+  right: 0;
+  width: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .hero.hero--half::after {
+    -webkit-transform: unset;
+            transform: unset;
+    top: -50%;
+    right: unset;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero.hero--half::after {
+    right: 0;
+  }
+}
+
+.hero.hero--half .hero__tagline {
+  margin: 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .hero.hero--half .hero__content {
+    text-align: center;
+  }
+}
+
+.hero.hero--half .hero__content .hero__tagline {
+  margin: 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .hero.hero--half .hero__content .hero__tagline {
+    width: auto;
+    padding: 0 6rem;
+  }
+}
+
 .showcase {
   padding-top: 12rem;
 }

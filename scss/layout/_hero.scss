@@ -99,3 +99,53 @@
 		}
 	}
 }
+
+// hero-half {
+
+.hero.hero--half {
+	height: auto;
+	padding: 10rem 0;
+
+	@include respond-to(small) {
+		padding: 6rem 0;
+	}
+	@include respond-to(large) {
+		justify-content: center;
+	}
+
+	&::after {
+		content: url(../../assets/web-design/desktop/bg-pattern-intro-web.svg);
+		top: 0;
+		left: unset;
+		right: 0;
+		width: auto;
+
+		@include respond-to(small) {
+			transform: unset;
+			top: -50%;
+			right: unset;
+		}
+		@include respond-to(large) {
+			right: 0;
+		}
+	}
+
+	.hero__tagline {
+		margin: 0;
+	}
+
+	.hero__content {
+		@include respond-to(large) {
+			text-align: center;
+		}
+
+		.hero__tagline {
+			margin: 0;
+
+			@include respond-to(large) {
+				width: auto;
+				padding: 0 6rem;
+			}
+		}
+	}
+}
