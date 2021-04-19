@@ -1,0 +1,60 @@
+.shoutout {
+	margin-top: 12rem;
+	padding: 6.4rem 2.4rem;
+	border-radius: 15px;
+	background: url(../../assets/shared/desktop/bg-pattern-call-to-action.svg)
+			no-repeat left/cover,
+		$primary-peach;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+
+	@include respond-to(small) {
+		padding: 5.8rem;
+	}
+	@include respond-to(large) {
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 6.9rem 9.5rem;
+	}
+
+	.shoutout__content {
+		@include respond-to(large) {
+			width: 50%;
+			text-align: left;
+		}
+	}
+
+	.shoutout__title {
+		font-size: 3.2rem;
+		color: $white;
+		margin: 0 0 1.6rem;
+
+		@include respond-to(small) {
+			font-size: 4rem;
+			padding: 0 11.9rem;
+		}
+		@include respond-to(large) {
+			padding: 0;
+			width: 70%;
+		}
+	}
+
+	.shoutout__tagline {
+		color: $white;
+		margin: 0 0 3.2rem;
+
+		@include respond-to(small) {
+			padding: 0 5.8rem;
+		}
+		@include respond-to(large) {
+			padding: 0;
+			margin-bottom: 0;
+		}
+	}
+
+	.btn {
+		display: inline-block;
+	}
+}

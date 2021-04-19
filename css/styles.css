@@ -810,6 +810,92 @@ h3 {
   margin: 0;
 }
 
+.shoutout {
+  margin-top: 12rem;
+  padding: 6.4rem 2.4rem;
+  border-radius: 15px;
+  background: url(../../assets/shared/desktop/bg-pattern-call-to-action.svg) no-repeat left/cover, #e78168;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .shoutout {
+    padding: 5.8rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .shoutout {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 6.9rem 9.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .shoutout .shoutout__content {
+    width: 50%;
+    text-align: left;
+  }
+}
+
+.shoutout .shoutout__title {
+  font-size: 3.2rem;
+  color: #fff;
+  margin: 0 0 1.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .shoutout .shoutout__title {
+    font-size: 4rem;
+    padding: 0 11.9rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .shoutout .shoutout__title {
+    padding: 0;
+    width: 70%;
+  }
+}
+
+.shoutout .shoutout__tagline {
+  color: #fff;
+  margin: 0 0 3.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .shoutout .shoutout__tagline {
+    padding: 0 5.8rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .shoutout .shoutout__tagline {
+    padding: 0;
+    margin-bottom: 0;
+  }
+}
+
+.shoutout .btn {
+  display: inline-block;
+}
+
 button {
   cursor: pointer;
 }
@@ -817,6 +903,7 @@ button {
 .btn {
   padding: 1.7rem 2.4rem;
   font-size: 1.5rem;
+  font-weight: 500;
   letter-spacing: 1px;
   line-height: 1.4;
   border-radius: 8px;
