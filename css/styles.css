@@ -434,6 +434,21 @@ h3 {
   display: grid;
 }
 
+.grid--col-2 {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  row-gap: 2.4rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .grid--col-2 {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 3rem;
+            column-gap: 3rem;
+  }
+}
+
 .header .main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1114,6 +1129,19 @@ h3 {
 
 .projects {
   padding-top: 9.6rem;
+  margin-bottom: 9.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .projects {
+    margin-bottom: 12rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .projects {
+    margin-bottom: 16rem;
+  }
 }
 
 .projects.grid {

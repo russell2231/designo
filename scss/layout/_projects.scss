@@ -1,5 +1,13 @@
 .projects {
 	padding-top: 9.6rem;
+	margin-bottom: 9.6rem;
+
+	@include respond-to(small) {
+		margin-bottom: 12rem;
+	}
+	@include respond-to(large) {
+		margin-bottom: 16rem;
+	}
 
 	&.grid {
 		grid-template-columns: 1fr;
