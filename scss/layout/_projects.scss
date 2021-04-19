@@ -1,0 +1,13 @@
+.projects {
+	padding-top: 9.6rem;
+
+	&.grid {
+		grid-template-columns: 1fr;
+		row-gap: 4rem;
+
+		@include respond-to(large) {
+			grid-template-columns: repeat(3, 1fr);
+			column-gap: 3rem;
+		}
+	}
+}

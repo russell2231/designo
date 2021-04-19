@@ -4,6 +4,7 @@
 @import 'base/normalize', 'base/typography', 'base/base';
 
 @import 'layout/grid', 'layout/navigation', 'layout/header', 'layout/hero',
-	'layout/showcase', 'layout/features', 'layout/shoutout', 'layout/footer';
+	'layout/showcase', 'layout/features', 'layout/shoutout', 'layout/footer',
+	'layout/projects';
 
-@import 'components/buttons', 'components/showcase-item';
+@import 'components/buttons', 'components/showcase-item', 'components/card';

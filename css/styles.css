@@ -1112,6 +1112,25 @@ h3 {
   fill: #ffad98;
 }
 
+.projects {
+  padding-top: 9.6rem;
+}
+
+.projects.grid {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  row-gap: 4rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .projects.grid {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -webkit-column-gap: 3rem;
+            column-gap: 3rem;
+  }
+}
+
 button {
   cursor: pointer;
 }
@@ -1253,6 +1272,98 @@ button {
   font-size: 1.5rem;
   letter-spacing: 5px;
   text-transform: uppercase;
+  margin: 0;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.card .card__image {
+  width: 100%;
+  display: block;
+  border-radius: 15px 15px 0 0;
+}
+
+@media screen and (min-width: 768px) {
+  .card .card__image {
+    width: 50%;
+    border-radius: 15px 0 0 15px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card .card__image {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+  }
+}
+
+.card .card__info {
+  background: #fff2ef;
+  padding: 3rem;
+  text-align: center;
+  border-radius: 0 0 15px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .card .card__info {
+    width: 50%;
+    padding: 0 3.2rem;
+    border-radius: 0 15px 15px 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card .card__info {
+    width: 100%;
+    padding: 3.2rem;
+    border-radius: 0 0 15px 15px;
+  }
+}
+
+.card .card__info .card__title {
+  margin-top: 0;
+  margin-bottom: 1.6rem;
+  color: #e78168;
+  text-transform: uppercase;
+}
+
+.card .card__info .card__tagline {
   margin: 0;
 }
 /*# sourceMappingURL=styles.css.map */
