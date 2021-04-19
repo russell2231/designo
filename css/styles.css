@@ -1176,6 +1176,7 @@ button {
   transition: background 0.3s ease;
   text-transform: uppercase;
   text-align: center;
+  display: inline-block;
 }
 
 .btn--light {
@@ -1517,6 +1518,16 @@ button {
 
 @media screen and (min-width: 1440px) {
   .about {
+    padding-bottom: 16rem;
+  }
+}
+
+.location-showcase {
+  padding-bottom: 12rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .location-showcase {
     padding-bottom: 16rem;
   }
 }

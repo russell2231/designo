@@ -6,3 +6,11 @@
 		padding-bottom: 16rem;
 	}
 }
+
+.location-showcase {
+	padding-bottom: 12rem;
+
+	@include respond-to(large) {
+		padding-bottom: 16rem;
+	}
+}
