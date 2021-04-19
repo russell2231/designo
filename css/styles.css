@@ -1394,4 +1394,130 @@ button {
 .card .card__info .card__tagline {
   margin: 0;
 }
+
+@media screen and (min-width: 768px) {
+  .card.card--hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 89.7%;
+    max-width: 1110px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card.card--hero {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .card.card--hero:nth-of-type(odd) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .card.card--hero:nth-of-type(odd) .card__image {
+    border-radius: 0 15px 15px 0;
+  }
+  .card.card--hero:nth-of-type(odd) .card__info {
+    border-radius: 15px 0 0 15px;
+  }
+}
+
+.card.card--hero .card__image {
+  border-radius: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .card.card--hero .card__image {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card.card--hero .card__image {
+    border-radius: 15px 0 0 15px;
+  }
+}
+
+.card.card--hero .card__info {
+  padding: 8rem 2.4rem;
+  border-radius: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .card.card--hero .card__info {
+    width: 100%;
+    border-radius: 0 0 15px 15px;
+    padding: 6rem 5.8rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card.card--hero .card__info {
+    width: 57.3%;
+    text-align: left;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 9.5rem;
+    border-radius: 0 15px 15px 0;
+  }
+}
+
+.card.card--hero .card__title {
+  text-transform: none;
+  margin-bottom: 2.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .card.card--hero .card__title {
+    margin-bottom: 3.6rem;
+  }
+}
+
+.card.card--hero.card--hero-primary .card__info {
+  background: url(../../assets/about/mobile/bg-pattern-hero-about-mobile.svg) no-repeat 100% 27%/250%, #e78168;
+}
+
+@media screen and (min-width: 768px) {
+  .card.card--hero.card--hero-primary .card__info {
+    background: url(../../assets/about/desktop/bg-pattern-hero-about-desktop.svg) no-repeat -120px -425px, #e78168;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card.card--hero.card--hero-primary .card__info {
+    background: url(../../assets/about/desktop/bg-pattern-hero-about-desktop.svg) no-repeat 0% 100%/cover, #e78168;
+  }
+}
+
+.card.card--hero.card--hero-primary .card__info .card__title {
+  color: #fff;
+}
+
+.card.card--hero.card--hero-primary .card__info .card__tagline {
+  color: #fff;
+}
+
+.card.card--hero.card--hero-secondary .card__info {
+  background: url(../../assets/shared/desktop/bg-pattern-three-circles.svg) no-repeat center/cover, #fff2ef;
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    padding-bottom: 12rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about {
+    padding-bottom: 16rem;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

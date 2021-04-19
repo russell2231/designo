@@ -1,0 +1,8 @@
+.about {
+	@include respond-to(small) {
+		padding-bottom: 12rem;
+	}
+	@include respond-to(large) {
+		padding-bottom: 16rem;
+	}
+}

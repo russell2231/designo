@@ -56,3 +56,104 @@
 		}
 	}
 }
+
+// Hero Card
+.card.card--hero {
+	@include respond-to(small) {
+		flex-direction: column;
+		width: 89.7%;
+		max-width: 1110px;
+		margin: 0 auto;
+	}
+	@include respond-to(large) {
+		flex-direction: row;
+
+		&:nth-of-type(odd) {
+			flex-direction: row-reverse;
+
+			.card__image {
+				border-radius: 0 15px 15px 0;
+			}
+
+			.card__info {
+				border-radius: 15px 0 0 15px;
+			}
+		}
+	}
+
+	.card__image {
+		border-radius: 0;
+
+		@include respond-to(small) {
+			border-radius: 15px 15px 0 0;
+			width: 100%;
+		}
+		@include respond-to(large) {
+			border-radius: 15px 0 0 15px;
+		}
+	}
+
+	.card__info {
+		padding: 8rem 2.4rem;
+		border-radius: 0;
+
+		@include respond-to(small) {
+			width: 100%;
+			border-radius: 0 0 15px 15px;
+			padding: 6rem 5.8rem;
+		}
+		@include respond-to(large) {
+			width: 57.3%;
+			text-align: left;
+			justify-content: center;
+			padding: 0 9.5rem;
+			border-radius: 0 15px 15px 0;
+		}
+	}
+
+	.card__title {
+		text-transform: none;
+		margin-bottom: 2.6rem;
+
+		@include respond-to(small) {
+			margin-bottom: 3.6rem;
+		}
+	}
+
+	// card hero styles
+
+	&.card--hero-primary {
+		.card__info {
+			background: url(../../assets/about/mobile/bg-pattern-hero-about-mobile.svg)
+					no-repeat 100% 27%/ 250%,
+				$primary-peach;
+
+			@include respond-to(small) {
+				background: url(../../assets/about/desktop/bg-pattern-hero-about-desktop.svg)
+						no-repeat -120px -425px,
+					$primary-peach;
+			}
+			@include respond-to(large) {
+				background: url(../../assets/about/desktop/bg-pattern-hero-about-desktop.svg)
+						no-repeat 0% 100% / cover,
+					$primary-peach;
+			}
+
+			.card__title {
+				color: $white;
+			}
+
+			.card__tagline {
+				color: $white;
+			}
+		}
+	}
+
+	&.card--hero-secondary {
+		.card__info {
+			background: url(../../assets/shared/desktop/bg-pattern-three-circles.svg)
+					no-repeat center/cover,
+				lighten($secondary-peach, 17%);
+		}
+	}
+}
