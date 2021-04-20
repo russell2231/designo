@@ -149,3 +149,38 @@
 		}
 	}
 }
+
+// Hero Contact
+.hero.contact {
+	height: auto;
+	padding: 7rem 0;
+
+	@include respond-to(large) {
+		padding: 5.4rem 9.5rem;
+	}
+
+	&::after {
+		@include respond-to(small) {
+			top: -50px;
+			left: 0;
+		}
+		@include respond-to(large) {
+			top: -150px;
+		}
+	}
+
+	.hero__content {
+		margin-bottom: 4.7rem;
+
+		@include respond-to(small) {
+			text-align: left;
+			margin-bottom: 4rem;
+		}
+
+		.hero__tagline {
+			@include respond-to(small) {
+				padding: 0;
+			}
+		}
+	}
+}

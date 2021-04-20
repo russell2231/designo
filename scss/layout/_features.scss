@@ -61,4 +61,25 @@
 			}
 		}
 	}
+
+	// Location showcase
+
+	&.location-showcase {
+		&.grid {
+			@include respond-to(small) {
+				row-gap: 8rem;
+			}
+		}
+
+		.features__item {
+			@include respond-to(small) {
+				flex-direction: column;
+			}
+
+			.features__content {
+				text-align: center;
+				margin-top: 4.6rem;
+			}
+		}
+	}
 }

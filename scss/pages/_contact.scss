@@ -1,0 +1,11 @@
+.footer {
+	margin-top: 0;
+	padding-top: 6.4rem;
+
+	@include respond-to(small) {
+		padding-top: 8rem;
+	}
+	@include respond-to(large) {
+		padding-top: 7.2rem;
+	}
+}
