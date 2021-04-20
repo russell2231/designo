@@ -156,4 +156,56 @@
 				lighten($secondary-peach, 17%);
 		}
 	}
+
+	&.card--location {
+		@include respond-to(large) {
+			justify-content: space-between;
+		}
+
+		.card__image {
+			@include respond-to(small) {
+				margin-bottom: 3rem;
+				border-radius: 15px;
+			}
+			@include respond-to(large) {
+				width: 350px;
+				height: 100%;
+				margin-bottom: 0;
+			}
+		}
+
+		.card__info {
+			@include respond-to(small) {
+				flex-direction: row;
+				flex-wrap: wrap;
+				text-align: left;
+				padding: 8.8rem 7.5rem;
+				border-radius: 15px;
+			}
+			@include respond-to(large) {
+				padding: 8.5rem 9.5rem;
+				width: 730px;
+			}
+
+			.card__title {
+				@include respond-to(small) {
+					width: 100%;
+				}
+			}
+
+			.card__tagline {
+				@include respond-to(small) {
+					width: 50%;
+				}
+
+				&:nth-of-type(odd) {
+					margin-bottom: 2.4rem;
+
+					@include respond-to(small) {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
 }

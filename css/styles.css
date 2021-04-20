@@ -429,6 +429,10 @@ h3 {
   margin: 0;
 }
 
+.title {
+  font-weight: 700;
+}
+
 .grid {
   display: -ms-grid;
   display: grid;
@@ -446,6 +450,24 @@ h3 {
         grid-template-columns: 1fr 1fr;
     -webkit-column-gap: 3rem;
             column-gap: 3rem;
+  }
+}
+
+.grid--location {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  row-gap: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--location {
+    row-gap: 12rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .grid--location {
+    row-gap: 3.2rem;
   }
 }
 
@@ -1508,6 +1530,72 @@ button {
 
 .card.card--hero.card--hero-secondary .card__info {
   background: url(../../assets/shared/desktop/bg-pattern-three-circles.svg) no-repeat center/cover, #fff2ef;
+}
+
+@media screen and (min-width: 1440px) {
+  .card.card--hero.card--location {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card.card--hero.card--location .card__image {
+    margin-bottom: 3rem;
+    border-radius: 15px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card.card--hero.card--location .card__image {
+    width: 350px;
+    height: 100%;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card.card--hero.card--location .card__info {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: left;
+    padding: 8.8rem 7.5rem;
+    border-radius: 15px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card.card--hero.card--location .card__info {
+    padding: 8.5rem 9.5rem;
+    width: 730px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card.card--hero.card--location .card__info .card__title {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card.card--hero.card--location .card__info .card__tagline {
+    width: 50%;
+  }
+}
+
+.card.card--hero.card--location .card__info .card__tagline:nth-of-type(odd) {
+  margin-bottom: 2.4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .card.card--hero.card--location .card__info .card__tagline:nth-of-type(odd) {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {

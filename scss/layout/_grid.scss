@@ -11,3 +11,15 @@
 		column-gap: 3rem;
 	}
 }
+
+.grid--location {
+	grid-template-columns: 1fr;
+	row-gap: 4rem;
+
+	@include respond-to(small) {
+		row-gap: 12rem;
+	}
+	@include respond-to(large) {
+		row-gap: 3.2rem;
+	}
+}
