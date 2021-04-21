@@ -67,4 +67,14 @@
 			align-self: flex-end;
 		}
 	}
+
+	.success {
+		text-align: center;
+		padding: 4rem 0;
+		color: $white;
+
+		h3 {
+			color: $white;
+		}
+	}
 }

@@ -1769,6 +1769,16 @@ button {
   }
 }
 
+#contact-form .success {
+  text-align: center;
+  padding: 4rem 0;
+  color: #fff;
+}
+
+#contact-form .success h3 {
+  color: #fff;
+}
+
 @media screen and (min-width: 768px) {
   .about {
     padding-bottom: 12rem;
