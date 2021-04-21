@@ -47,7 +47,7 @@
 	// Expanded Main Nav Module
 	&.expanded {
 		position: relative;
-		z-index: 2;
+		z-index: 10;
 
 		.list {
 			background: $primary-black;

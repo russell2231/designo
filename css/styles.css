@@ -421,6 +421,7 @@ h3 {
 
 .overlay.expanded {
   display: block;
+  z-index: 5;
 }
 
 .list {
@@ -526,7 +527,7 @@ h3 {
 
 .header.expanded {
   position: relative;
-  z-index: 2;
+  z-index: 10;
 }
 
 .header.expanded .list {
