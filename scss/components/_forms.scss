@@ -9,6 +9,24 @@
 		width: 40%;
 	}
 
+	.form-group {
+		width: 100%;
+		position: relative;
+
+		&.error {
+			&::after {
+				content: "Can't be empty";
+				background: url(../../assets/contact/desktop/icon-error.svg) no-repeat
+					right;
+				padding-right: 30px;
+				color: $white;
+				position: absolute;
+				right: 8px;
+				top: 10px;
+			}
+		}
+	}
+
 	input,
 	textarea {
 		width: 100%;
@@ -20,7 +38,7 @@
 		color: $white;
 
 		@include respond-to(small) {
-			margin-bottom: 2.2rem;
+			margin-bottom: 1.4rem;
 		}
 
 		&::placeholder {
@@ -35,7 +53,7 @@
 
 	textarea {
 		margin-bottom: 4rem;
-		height: 120px;
+		height: 100px;
 
 		@include respond-to(small) {
 			margin-bottom: 2.4rem;
