@@ -1801,19 +1801,19 @@ button {
   }
 }
 
-.footer {
+.main-contact + .footer {
   margin-top: 0;
   padding-top: 6.4rem;
 }
 
 @media screen and (min-width: 768px) {
-  .footer {
+  .main-contact + .footer {
     padding-top: 8rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .footer {
+  .main-contact + .footer {
     padding-top: 7.2rem;
   }
 }
